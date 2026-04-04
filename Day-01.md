@@ -101,7 +101,7 @@ Configuration settings
 
     Repository : Where all committed changes are permanently stored
 
-*💡 Staging Area (Why it exists)
+* Staging Area (Why it exists)
     The staging area lets you select and organize changes before committing.
 
     👉 What it does:
