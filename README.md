@@ -6,20 +6,17 @@
 
 ## 📖 About This Repository
 
-This repository serves as my practical notebook as I learn **Git** and **GitHub** from the ground up on a Linux environment. Rather than just reading theory, I believe in learning by doing — so every concept I study gets practiced, documented, and pushed here.
-
-Whether you're a fellow beginner or just curious about my progress, feel free to explore!
+This repository serves as my notebook as I learn **Git** and **GitHub** from the ground up on a Linux environment. Rather than just reading theory, I believe in learning by doing — so every concept I study gets practiced, documented, and pushed here.
 
 ---
 
-## 🎯 What This Repo Covers
+## 🎯 What This Repositoey Covers
 
 Here's a breakdown of the core areas I'm working through:
 
-- **Git Basics** — Understanding version control, initializing repositories, and tracking changes
-- **Staging & Committing** — How to stage files and write meaningful commit messages
-- **Branching & Merging** — Creating branches, switching between them, and merging changes
-- **Remote Repositories** — Connecting local repos to GitHub, pushing and pulling changes
+- **Introduction to Git** — Install and Configure Git, initializing repositories, and tracking changes
+- **Git Branching & Working with GitHub** — Creating and switching branches, Connecting local repos to GitHub, pushing and pulling changes, Clone vs Fork
+- **Advanced Git** — Merge, Rebase, Squash Commit vs Merge Commit, Stash & Cherry Pick
 - **Undoing Changes** — Reverting, resetting, and restoring files safely
 - **Collaboration Workflows** — Forking, cloning, and working with pull requests
 - **Git on Linux** — Using Git efficiently through the Linux terminal
@@ -49,7 +46,7 @@ I'm learning Git hands-on through the Linux terminal, practicing each command in
 
 - **OS:** Linux (Ubuntu)
 - **Shell:** Bash
-- **Editor:** VS Code / Vim
+- **Editor:** Vim
 - **Platform:** GitHub
 
 ---
@@ -60,12 +57,6 @@ I'm learning Git hands-on through the Linux terminal, practicing each command in
 - [ ] Understand branching strategies used in real projects
 - [ ] Contribute to open source using proper Git practices
 - [ ] Use Git confidently in cloud and DevOps projects
-
----
-
-## 👤 About Me
-
-I'm **Harsh**, an aspiring Cloud Engineer and DevOps enthusiast. I'm currently building my skills across Linux, Bash scripting, AWS, and developer tooling. This repository is part of my broader effort to document my technical learning journey openly on GitHub.
 
 ---
 
