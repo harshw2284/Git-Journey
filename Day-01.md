@@ -48,6 +48,7 @@ git init
 ```bash
 git status
 ```
+**Use:Shows the current state of the repository — which files are modified, staged, or untracked, and what is ready to commit.**
 
 ---
 
