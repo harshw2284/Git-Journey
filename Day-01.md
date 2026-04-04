@@ -22,15 +22,15 @@ git --version
 **Set up your Git identity — name and email**
 
 ```bash
-# git config --global user.name "Your Name"
-# git config --global user.email "your_email@example.com"
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
 ```
 
 **Verify your configuration**
 
 ```bash
-# git config --global user.name 
-# git config --global user.email 
+git config --global user.name 
+git config --global user.email 
 ```
 
 ---
