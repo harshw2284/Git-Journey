@@ -20,7 +20,6 @@ git --version
 **Use: To check git version on your local**
 
 --
-
 **Set up your Git identity — name and email**
 
 ```bash
