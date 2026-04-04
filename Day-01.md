@@ -14,7 +14,7 @@
 **Verify Git is installed on your machine:**
 
 ```bash
-# git --version
+git --version
 ```
 
 **Use:To check git version on your local**
