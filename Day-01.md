@@ -77,7 +77,7 @@ git log --oneline
 
 ## 💡 Key Learnings
 
-*.git/ : it stores all the information Git needs to track your project.
+*  ".git/" : it stores all the information Git needs to track your project.
 It contains :
 
 Commits history (all versions of your project)
@@ -89,28 +89,28 @@ Configuration settings
 
 * git add vs git commit
 
-git add : Moves changes to the staging area (prepares files for commit)
+    git add : Moves changes to the staging area (prepares files for commit)
 
-git commit : Saves the staged changes permanently in Git history
+    git commit : Saves the staged changes permanently in Git history
 
 * Working Directory vs Staging Area vs Repository
 
-Working Directory : Where you write and modify your files
+    Working Directory : Where you write and modify your files
 
-Staging Area (Index) : Where you prepare files using git add before committing
+    Staging Area (Index) : Where you prepare files using git add before committing
 
-Repository : Where all committed changes are permanently stored
+    Repository : Where all committed changes are permanently stored
 
 *💡 Staging Area (Why it exists)
-The staging area lets you select and organize changes before committing.
+    The staging area lets you select and organize changes before committing.
 
-👉 What it does:
-Allows you to choose specific files or parts of changes
-Helps create clean and meaningful commits
+    👉 What it does:
+    Allows you to choose specific files or parts of changes
+    Helps create clean and meaningful commits
 
-👉 Why not commit directly?
-Without staging, all changes would be committed at once
-No control over what goes into a commit
+    👉 Why not commit directly?
+    Without staging, all changes would be committed at once
+    No control over what goes into a commit
 
 ---
 
