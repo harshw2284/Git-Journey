@@ -35,73 +35,42 @@ git config --global user.email
 
 ---
 
-### ✅ Task 2: <Task Name>
+### ✅ Task 2: <Creating our Git Project>
 
-**Command:**
+**Initialize Folder as a Git repository**
 
 ```bash
-# write your command here
+git init
 ```
 
-**Use:**
+**Check the status**
 
-> Explain its purpose
+```bash
+git status
+```
 
 ---
 
-### ✅ Task 3: <Task Name>
+### ✅ Task 3: <Stage and Commit>
 
-**Command:**
-
-```bash
-# write your command here
-```
-
-**Use:**
-
-> Explain its purpose
-
----
-
-### ✅ Task 4: <Task Name>
-
-**Command:**
+**Staging the file**
 
 ```bash
-# write your command here
+git add <file-name>
 ```
 
-**Use:**
-
-> Explain its purpose
-
----
-
-### ✅ Task 5: <Task Name>
-
-**Command:**
+**Commit the file**
 
 ```bash
-# write your command here
+git commit -m "<message>"
 ```
 
-**Use:**
-
-> Explain its purpose
-
----
-
-### ✅ Task 6: <Task Name> (Optional)
-
-**Command:**
+**Show commit history**
 
 ```bash
-# write your command here
+git log
+git log --oneline
 ```
-
-**Use:**
-
-> Explain its purpose
 
 ---
 
@@ -113,9 +82,3 @@ git config --global user.email
 
 ---
 
-## 🚀 Next Plan (Day 02)
-
-* What you will learn next
-* Example: Branching, merging, stash
-
----
