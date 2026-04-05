@@ -136,12 +136,12 @@ git diff
 
    * origin is the default remote name for the repository you cloned from.
 
-   It usually points to your own copy of the repo (especially on GitHub)
+    It usually points to your own copy of the repo (especially on GitHub)
    
-   You push and pull changes from here
+    You push and pull changes from here
 
    * upstream refers to the original/main repository you forked from.
 
-   Used to keep your repo updated with the original project
+    Used to keep your repo updated with the original project
 
 
