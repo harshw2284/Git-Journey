@@ -124,7 +124,7 @@ git diff
    By default, Git has a main branch (usually main or master)
    You can create new branches to work independently
    
-2. What is HEAD in Git? What happens to your files when you switch branches?
+## 2. What is HEAD in Git? What happens to your files when you switch branches?
    
    In Git, HEAD is a pointer to the current commit you are working on.
 
@@ -132,7 +132,7 @@ git diff
 
    When you switch branches using git checkout or git switch, Git updates your working directory to match that branch.
 
-3. What is the difference between origin and upstream?
+## 3. What is the difference between origin and upstream?
 
    origin is the default remote name for the repository you cloned from.
 
