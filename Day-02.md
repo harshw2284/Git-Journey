@@ -44,7 +44,7 @@ git branch -d <branch-name>
 
 ---
 
-### ✅ Task 2: <Push to GitHub>
+### ✅ Task 2: Push to GitHub
 
 **Pushes your main branch to GitHub**
 
@@ -60,7 +60,7 @@ git push --all
 
 ---
 
-### ✅ Task 3: <Stage and Commit>
+### ✅ Task 3: Stage and Commit
 
 **Fetches + merges latest changes from GitHub into your current branch**
 
@@ -75,6 +75,7 @@ git pull --all
 ```
 
 *git pull vs git fetch
+
       git fetch → only downloads changes
       git pull → downloads and applies changes
       
