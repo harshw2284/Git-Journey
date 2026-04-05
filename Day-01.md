@@ -28,7 +28,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
 ```
 
-**Verify your configuration**
+**3. Verify your configuration**
 
 ```bash
 git config --global user.name 
