@@ -109,6 +109,24 @@ git clone git@github.com:username/repo.git
 git diff
 ```
 
+**2. To show all remote repositories linked to your project along with their URLs.(like origin, upstream)**
+```bash
+git remote -v
+```
+
+**3. Updates the URL of an existing remote.**
+```bash
+git remote set-url <name> <url>
+git remote set-url origin https://github.com/newuser/repo.git
+```
+
+**4. Adds a new remote repository [origin is just a name (can be anything)]**
+*Use: Links your local repo to a remote repo (like GitHub)*
+```bash
+git remote add <name> <url>
+git remote add origin https://github.com/user/repo.git
+```
+
 ---
 
 # QnA
