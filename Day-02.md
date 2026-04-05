@@ -98,9 +98,9 @@ git clone git@github.com:username/repo.git
 
 **Clone vs Fork**
    
-   Clone → copy repo to your local system
+    Clone → copy repo to your local system
    
-   Fork → copy repo to your GitHub account
+    Fork → copy repo to your GitHub account
 
 
 ## 💡 Key Learnings
