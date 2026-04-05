@@ -104,8 +104,23 @@ git clone git@github.com:username/repo.git
 
 
 ## 💡 Key Learnings
+**1. To show changes you made but haven’t added (git add) yet**
+```bash
+git diff
+```
+
+2.
+
 
 
 
 ---
+
+## QnA
+1. What is a branch in Git? Why do we use branches instead of committing everything to main?
+   A branch in Git is a separate line of development.
+   It allows you to work on new features, fixes, or experiments without affecting the main codebase.
+
+   By default, Git has a main branch (usually main or master)
+   You can create new branches to work independently
 
