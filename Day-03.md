@@ -12,7 +12,7 @@
 
 ### ✅ Task 1: Git Merge — Hands-On
 
-**Combine changes from one branch into another branch.**
+**1. Combine changes from one branch into another branch.**
 
 ```bash
 git merge <branch-name>
@@ -30,7 +30,7 @@ Switch to main
 
 Bring all changes from feature-branch into main
 
-**Create a new branch**
+**2. Create a new branch**
 
 ```bash
 git branch <branch name>
