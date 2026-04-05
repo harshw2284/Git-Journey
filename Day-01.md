@@ -12,7 +12,7 @@
 
 ### ✅ Task 1: Install and Configure Git
 
-**Verify Git is installed on your machine:**
+**1. Verify Git is installed on your machine:**
 
 ```bash
 git --version
@@ -21,7 +21,7 @@ git --version
 **Use: To check git version on your local**
 
 
-**Set up your Git identity — name and email**
+**2. Set up your Git identity — name and email**
 
 ```bash
 git config --global user.name "Your Name"
