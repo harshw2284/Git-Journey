@@ -3,13 +3,14 @@
 ## 🎯 Objective
 
 > Writing what I learned today in 1–2 lines
+
 > Understanding Git Basics.
 
 ---
 
 ## 📝 Tasks Completed
 
-### ✅ Task 1: <Install and Configure Git>
+### ✅ Task 1: Install and Configure Git
 
 **Verify Git is installed on your machine:**
 
@@ -36,7 +37,7 @@ git config --global user.email
 
 ---
 
-### ✅ Task 2: <Creating our Git Project>
+### ✅ Task 2: Creating our Git Project
 
 **Initialize Folder as a Git repository**
 
@@ -53,7 +54,7 @@ git status
 
 ---
 
-### ✅ Task 3: <Stage and Commit>
+### ✅ Task 3: Stage and Commit
 
 **Staging the file**
 
