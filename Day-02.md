@@ -10,7 +10,7 @@
 
 ## 📝 Tasks Completed
 
-### ✅ Task 1: <Branching Commands>
+### ✅ Task 1: Branching Commands
 
 **List all branches in your repo:**
 
