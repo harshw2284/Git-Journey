@@ -121,6 +121,7 @@ git remote set-url origin https://github.com/newuser/repo.git
 ```
 
 **4. Adds a new remote repository [origin is just a name (can be anything)]**
+
 *Use: Links your local repo to a remote repo (like GitHub)*
 ```bash
 git remote add <name> <url>
