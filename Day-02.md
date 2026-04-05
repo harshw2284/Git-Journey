@@ -74,13 +74,6 @@ git pull origin main
 git pull --all
 ```
 
-**Show commit history**
-
-```bash
-git log
-git log --oneline
-```
-
 *git pull vs git fetch
       git fetch → only downloads changes
       git pull → downloads and applies changes
