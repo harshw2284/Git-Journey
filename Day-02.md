@@ -109,11 +109,6 @@ git clone git@github.com:username/repo.git
 git diff
 ```
 
-2.
-
-
-
-
 ---
 
 # QnA
@@ -136,12 +131,34 @@ git diff
 
    * origin is the default remote name for the repository you cloned from.
 
-    It usually points to your own copy of the repo (especially on GitHub)
+   It usually points to your own copy of the repo (especially on GitHub)
    
-    You push and pull changes from here
+   You push and pull changes from here.
 
    * upstream refers to the original/main repository you forked from.
 
-    Used to keep your repo updated with the original project
+   Used to keep your repo updated with the original project.
+## 4. What is the difference between git fetch and git pull?
+   * git fetch downloads changes from the remote repo but does NOT apply them to your working files.
 
+   Updates your local copy of remote branches
+   
+   Safe: no automatic changes to your code
 
+   * git pull downloads + applies changes to your current branch.
+## 5. When would you clone vs fork? After forking, how do you keep your fork in sync with the original repo?
+   * Use clone when:
+
+   You just want a local copy of a repository
+   
+   You have direct access (your own repo or team repo)
+   
+   You plan to work and push directly
+
+   * Use fork when:
+
+   You don’t have write access to the original repo
+   
+   You want to contribute to open-source projects
+   
+   You need your own independent copy on GitHub
