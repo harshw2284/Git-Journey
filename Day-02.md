@@ -117,7 +117,7 @@ git diff
 ---
 
 ## QnA
-1. What is a branch in Git? Why do we use branches instead of committing everything to main?
+# 1. What is a branch in Git? Why do we use branches instead of committing everything to main?
 
    A branch in Git is a separate line of development.
    It allows you to work on new features, fixes, or experiments without affecting the main codebase.
