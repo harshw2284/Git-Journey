@@ -134,13 +134,13 @@ git diff
 
 ## 3. What is the difference between origin and upstream?
 
-   *origin is the default remote name for the repository you cloned from.
+   * origin is the default remote name for the repository you cloned from.
 
    It usually points to your own copy of the repo (especially on GitHub)
    
    You push and pull changes from here
 
-   *upstream refers to the original/main repository you forked from.
+   * upstream refers to the original/main repository you forked from.
 
    Used to keep your repo updated with the original project
 
