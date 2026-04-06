@@ -12,7 +12,7 @@
 
 ### ✅ Task 1: Git Merge — Hands-On
 
-**1. Combine changes from one branch into another branch.**
+**Combine changes from one branch into another branch.**
 
 ```bash
 git merge <branch-name>
@@ -30,90 +30,89 @@ Switch to main
 
 Bring all changes from feature-branch into main
 
-**2. Create a new branch**
+---
+
+### ✅ Task 2: Git Rebase — Hands-On
+
+**Move your branch's commits to start from a different (usually newer) point in history.**
 
 ```bash
-git branch <branch name>
+git rebase <branch-name>
 ```
 
-**Switch Branch**
+**Example :** 
 
 ```bash
-git switch <branch-name>  
+git checkout feature
+git rebase main
 ```
 
-**Create a new branch and switch to it in a single command**
+👉 This means:
 
-```bash
-git checkout -b <branch-name>  
-```
+Take commits from feature
 
-**Delete a branch**
-
-```bash
-git branch -d <branch-name>  
-```
+Reapply them on top of latest main
 
 ---
 
-### ✅ Task 2: Push to GitHub
+### ✅ Task 3:Squash Commit vs Merge Commit
 
-**Pushes your main branch to GitHub**
+**1. A squash commit means combining multiple commits into a single commit.**
 
-```bash
-git push origin main
-```
+**👉 In simple words:**
 
-**Push all branches**
+**Instead of many small commits, you turn them into one clean commit**
 
 ```bash
-git push --all
+git rebase -i HEAD~4
 ```
 
+**2. git merge --squash is used to combine all commits from a branch into ONE commit while merging.**
+
+**👉 In simple words:**
+
+**It takes all changes from another branch and adds them as a single commit (no merge history)**
+
+```bash
+git merge --squash <branch-name>
+```
+  
 ---
 
-### ✅ Task 3:Pull to GitHub
+### ✅ Task 4: Git Stash — Hands-On
 
-**Fetches + merges latest changes from GitHub into your current branch**
-
-```bash
-git pull origin main
-```
-
-**Pull all branches**
+**1. git stash temporarily saves your uncommitted changes and cleans your working directory.**
 
 ```bash
-git pull --all
+git stash
 ```
 
-**git pull vs git fetch**
+**2. git stash pop restores your stashed changes and removes them from stash list**
+```bash
+git stash pop
+```
 
-    git fetch → only downloads changes
-    git pull → downloads and applies changes
-      
+### ✅ Task 5: Cherry Picking
+
+**git cherry-pick is used to pick a specific commit from one branch and apply it to another branch.**
+```bash
+git cherry-pick <commit-hash>
+```
+
+**Example :** 
+
+```bash
+git checkout main
+git cherry-pick a1b2c3d
+```
+
+**👉 This means:**
+
+**Takes commit a1b2c3d from another branch**
+
+**Applies it to main**
+
 ---
-
-### ✅ Task 4: <Clone vs Fork>
-
-**Basic clone using https**
-
-```bash
-git clone https://github.com/username/repo.git
-```
-**Use: Downloads the repository to your local system**
-
-**Clone using SSH (recommended 🔥)**
-
-```bash
-git clone git@github.com:username/repo.git
-```
-
-**Clone vs Fork**
-   
-    Clone → copy repo to your local system
-   
-    Fork → copy repo to your GitHub account
-
 
 ## 💡 Key Learnings
 **1. To show changes you made but haven’t added (git add) yet**
