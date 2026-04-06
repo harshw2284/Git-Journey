@@ -68,26 +68,25 @@ git reset --hard f2c2254
 
 ---
 
-### ✅ Task 2: Git Rebase — Hands-On
+### ✅ Task 2: Git Revert — Hands-On
 
-**Move your branch's commits to start from a different (usually newer) point in history.**
+**git revert is used to undo a commit by creating a new commit.**
 
 ```bash
-git rebase <branch-name>
+git revert <commit-hash>
 ```
 
 **Example :** 
 
 ```bash
-git checkout feature
-git rebase main
+git revert a1b2c3d
 ```
 
-👉 This means:
+👉 This means :
 
-Take commits from feature
+Keeps the old commit
 
-Reapply them on top of latest main
+Creates a new commit that reverses its changes
 
 ---
 
