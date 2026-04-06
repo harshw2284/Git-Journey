@@ -60,7 +60,7 @@ git push --all
 
 ---
 
-### ✅ Task 3:Pull to GitHub
+### ✅ Task 3: Pull to GitHub
 
 **Fetches + merges latest changes from GitHub into your current branch**
 
@@ -81,7 +81,7 @@ git pull --all
       
 ---
 
-### ✅ Task 4: <Clone vs Fork>
+### ✅ Task 4: Clone vs Fork
 
 **Basic clone using https**
 
