@@ -58,16 +58,6 @@ git reset --hard f2c2254
 
 ---
 
-
-
-
-
-
-
-
-
----
-
 ### ✅ Task 2: Git Revert — Hands-On
 
 **git revert is used to undo a commit by creating a new commit.**
@@ -90,97 +80,29 @@ Creates a new commit that reverses its changes
 
 ---
 
-### ✅ Task 3: Squash Commit vs Merge Commit
 
-**1. A squash commit means combining multiple commits into a single commit.**
-
-**👉 In simple words:**
-
-**Instead of many small commits, you turn them into one clean commit**
-
-```bash
-git rebase -i HEAD~4
-```
-
-**2. git merge --squash is used to combine all commits from a branch into ONE commit while merging.**
-
-**👉 In simple words:**
-
-**It takes all changes from another branch and adds them as a single commit (no merge history)**
-
-```bash
-git merge --squash <branch-name>
-```
-  
----
-
-### ✅ Task 4: Git Stash — Hands-On
-
-**1. git stash temporarily saves your uncommitted changes and cleans your working directory.**
-
-```bash
-git stash
-```
-
-**2. git stash pop restores your stashed changes and removes them from stash list**
-```bash
-git stash pop
-```
-
----
-
-
-### ✅ Task 5: Cherry Picking
-
-**git cherry-pick is used to pick a specific commit from one branch and apply it to another branch.**
-```bash
-git cherry-pick <commit-hash>
-```
-
-**Example :** 
-
-```bash
-git checkout main
-git cherry-pick a1b2c3d
-```
-
-**👉 This means:**
-
-**Takes commit a1b2c3d from another branch**
-
-**Applies it to main**
 
 ---
 
 ## 💡 Key Learnings
-**1. To show changes you made but haven’t added (git add) yet**
+**git reflog is your safety net — it shows everything Git has done, even after a hard reset**
 ```bash
-git diff
+git reflog
 ```
 
-**2. To show all remote repositories linked to your project along with their URLs.(like origin, upstream)**
-```bash
-git remote -v
-```
+**Reset vs Revert — Summary**
 
-**3. Updates the URL of an existing remote.**
-```bash
-git remote set-url <name> <url>
-git remote set-url origin https://github.com/newuser/repo.git
-```
-
-**4. Adds a new remote repository [origin is just a name (can be anything)]**
-
-*Use: Links your local repo to a remote repo (like GitHub)*
-```bash
-git remote add <name> <url>
-git remote add origin https://github.com/user/repo.git
-```
+| Feature                          | `git reset`                                      | `git revert`                                      |
+|----------------------------------|--------------------------------------------------|---------------------------------------------------|
+| **What it does**                | Moves HEAD and rewrites commit history           | Creates a new commit that undoes changes         |
+| **Removes commit from history?**| ✅ Yes (rewrites history)                        | ❌ No (keeps history intact)                     |
+| **Safe for shared/pushed branches?** | ❌ No (can break collaboration)              | ✅ Yes (safe for public/shared branches)         |
+| **When to use**                 | Local changes, fixing commits before pushing     | Undo changes in already pushed/shared commits    |
 
 ---
 
 # QnA
-## 1. What is a branch in Git? Why do we use branches instead of committing everything to main?
+## 1.How is git revert different from git reset?
 
    A branch in Git is a separate line of development.
    It allows you to work on new features, fixes, or experiments without affecting the main codebase.
