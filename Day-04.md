@@ -50,7 +50,7 @@ git reset --hard f2c2254
 
 **Comparision Table**
 
-| Mode | Staging Area | Working Directory | Use Case |
+| `Mode` | `Staging Area` | `Working Directory` | `Use Case` |
 |-------|-----------|---------|
 | soft | Keeps | Keeps | Re-edit commits |
 | mixed | Clears staging | Keeps | Unstage changes |
