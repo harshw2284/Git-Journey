@@ -99,7 +99,7 @@ git reflog
 
 # QnA
 ## 1.How is git revert different from git reset?
-  *git reset moves your branch pointer (HEAD) to a previous commit
+  * git reset moves your branch pointer (HEAD) to a previous commit
   
   Effect: Deletes commits from history (rewrites history)
 
@@ -109,7 +109,7 @@ git reflog
    
    Clean up local commit history
 
-  *git revert creates a new commit that undoes a previous commit
+  * git revert creates a new commit that undoes a previous commit
   
    Effect: Keeps history intact (no deletion)
 
