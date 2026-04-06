@@ -55,7 +55,7 @@ Reapply them on top of latest main
 
 ---
 
-### ✅ Task 3:Squash Commit vs Merge Commit
+### ✅ Task 3: Squash Commit vs Merge Commit
 
 **1. A squash commit means combining multiple commits into a single commit.**
 
