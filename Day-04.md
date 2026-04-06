@@ -80,10 +80,6 @@ Creates a new commit that reverses its changes
 
 ---
 
-
-
----
-
 ## 💡 Key Learnings
 **1. git reflog is your safety net — it shows everything Git has done, even after a hard reset**
 ```bash
