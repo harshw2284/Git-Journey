@@ -92,6 +92,9 @@ git stash
 git stash pop
 ```
 
+---
+
+
 ### ✅ Task 5: Cherry Picking
 
 **git cherry-pick is used to pick a specific commit from one branch and apply it to another branch.**
