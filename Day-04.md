@@ -85,12 +85,12 @@ Creates a new commit that reverses its changes
 ---
 
 ## 💡 Key Learnings
-**git reflog is your safety net — it shows everything Git has done, even after a hard reset**
+**1. git reflog is your safety net — it shows everything Git has done, even after a hard reset**
 ```bash
 git reflog
 ```
 
-**Reset vs Revert — Summary**
+**2. Reset vs Revert — Summary**
 
 | Feature                          | `git reset`                                      | `git revert`                                      |
 |----------------------------------|--------------------------------------------------|---------------------------------------------------|
@@ -103,52 +103,36 @@ git reflog
 
 # QnA
 ## 1.How is git revert different from git reset?
+  *git reset moves your branch pointer (HEAD) to a previous commit
+  
+  Effect: Deletes commits from history (rewrites history)
 
-   A branch in Git is a separate line of development.
-   It allows you to work on new features, fixes, or experiments without affecting the main codebase.
-   By default, Git has a main branch (usually main or master)
-   You can create new branches to work independently
+   use case:
+
+   Fix mistakes before pushing
    
-## 2. What is HEAD in Git? What happens to your files when you switch branches?
+   Clean up local commit history
+
+  *git revert creates a new commit that undoes a previous commit
+  
+   Effect: Keeps history intact (no deletion)
+
+   use case:
+
+   Undo changes in shared/public branches
    
-   In Git, HEAD is a pointer to the current commit you are working on.
-
-   It usually points to the latest commit of the current branch.
-
-   When you switch branches using git checkout or git switch, Git updates your working directory to match that branch.
-
-## 3. What is the difference between origin and upstream?
-
-   * origin is the default remote name for the repository you cloned from.
-
-   It usually points to your own copy of the repo (especially on GitHub)
+   When collaboration is involved
+ 
    
-   You push and pull changes from here.
-
-   * upstream refers to the original/main repository you forked from.
-
-   Used to keep your repo updated with the original project.
-## 4. What is the difference between git fetch and git pull?
-   * git fetch downloads changes from the remote repo but does NOT apply them to your working files.
-
-   Updates your local copy of remote branches
+## 2. Should you ever use git reset on commits that are already pushed?
    
-   Safe: no automatic changes to your code
+  You generally should not use git reset on commits that have already been pushed to a shared
+  
+  repository because it rewrites the commit history, which can cause serious issues for other 
+  
+  collaborators. When you reset and then force push, the remote branch history changes, and anyone 
+  
+  who has already pulled the previous commits may face conflicts, duplicate commits, or even lose 
+  
+  their work. This makes collaboration confusing and error-prone.
 
-   * git pull downloads + applies changes to your current branch.
-## 5. When would you clone vs fork? After forking, how do you keep your fork in sync with the original repo?
-   * Use clone when:
-
-   You just want a local copy of a repository
-   
-   You have direct access (your own repo or team repo)
-   
-   You plan to work and push directly
-
-   * Use fork when:
-
-   You don’t have write access to the original repo
-   
-   You want to contribute to open-source projects
-   
-   You need your own independent copy on GitHub
