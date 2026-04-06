@@ -141,9 +141,7 @@ git remote add origin https://github.com/user/repo.git
 ## 2. What is HEAD in Git? What happens to your files when you switch branches?
    
    In Git, HEAD is a pointer to the current commit you are working on.
-
    It usually points to the latest commit of the current branch.
-
    When you switch branches using git checkout or git switch, Git updates your working directory to match that branch.
 
 ## 3. What is the difference between origin and upstream?
