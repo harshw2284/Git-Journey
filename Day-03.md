@@ -115,7 +115,6 @@ git cherry-pick a1b2c3d
 
 **Applies it to main**
 
----
 
 <!-- ## 💡 Key Learnings
 **1. To show changes you made but haven’t added (git add) yet**
@@ -145,53 +144,79 @@ git remote add origin https://github.com/user/repo.git
 ---
 
 # QnA
-## 1. What is a branch in Git? Why do we use branches instead of committing everything to main?
+## 1.What is a fast-forward merge? When does Git create a merge commit instead?
 
-   A branch in Git is a separate line of development.
-   It allows you to work on new features, fixes, or experiments without affecting the main codebase.
-   By default, Git has a main branch (usually main or master)
-   You can create new branches to work independently
+   A fast-forward merge happens when there is no divergence between branches.
+The target branch has not moved forward since you created your feature branch.
+
+Git creates a merge commit when branches have diverged.
+Both branches have new commits after branching.
    
-## 2. What is HEAD in Git? What happens to your files when you switch branches?
+## 2.What is a merge conflict?
    
-   In Git, HEAD is a pointer to the current commit you are working on.
+   A merge conflict happens when Git cannot automatically decide how to combine changes from two branches. Two branches changed the same part(line) of a file, and Git is confused about which version to keep
 
-   It usually points to the latest commit of the current branch.
+## 3. What does rebase actually do to your commits? Why should you never rebase commits that have been pushed and shared with others?
 
-   When you switch branches using git checkout or git switch, Git updates your working directory to match that branch.
-
-## 3. What is the difference between origin and upstream?
-
-   * origin is the default remote name for the repository you cloned from.
-
-   It usually points to your own copy of the repo (especially on GitHub)
+   * Rebase rewrites your commit history by taking your commits and replaying them on top of another branch.
    
-   You push and pull changes from here.
+   * you should never rebase commits that have been pushed and shared with others,
+Because it breaks history for others
+  
+## 4. When would you use rebase vs merge?
+   * Use rebase when: You want a clean, linear history
 
-   * upstream refers to the original/main repository you forked from.
+   * Use merge when: You want to preserve history exactly as it happened
+     
+## 5. What does squash merging do? When would you use squash merge vs regular merge?
+  A squash merge takes all commits from a branch and combines them into one single commit before merging.
 
-   Used to keep your repo updated with the original project.
-## 4. What is the difference between git fetch and git pull?
-   * git fetch downloads changes from the remote repo but does NOT apply them to your working files.
+   * Use squash merge when:
+Your feature branch has many small/dirty commits
+“fix typo”
+“update again”
+“final final fix”
+You want clean project history
+Working on small features or bug fixes
 
-   Updates your local copy of remote branches
-   
-   Safe: no automatic changes to your code
+   * Use regular merge when:
+You want to preserve detailed history
+Working on large features
+Important to track each commit (debugging, auditing)
 
-   * git pull downloads + applies changes to your current branch.
-## 5. When would you clone vs fork? After forking, how do you keep your fork in sync with the original repo?
-   * Use clone when:
+## 6. What is the trade-off of squashing?
+You gain a clean history, but you lose detailed history.
 
-   You just want a local copy of a repository
-   
-   You have direct access (your own repo or team repo)
-   
-   You plan to work and push directly
+   * What you gain (why people use it)
+Clean, readable commit history
+One meaningful commit per feature
 
-   * Use fork when:
+  * What you loose : You can’t see individual steps anymore
 
-   You don’t have write access to the original repo
-   
-   You want to contribute to open-source projects
-   
-   You need your own independent copy on GitHub
+## 7. What is the difference between git stash pop and git stash apply? When would you use stash in a real-world workflow?
+
+Both commands bring back your stashed changes, but there’s one crucial difference:
+
+* Core Difference
+git stash apply → restores changes but keeps the stash
+git stash pop → restores changes and deletes the stash
+
+* you use stash in a real-world workflow when you need to temporarily save unfinished work without committing it. like when you are workung and a bug comes.
+
+## 8. What does cherry-pick do? When would you use cherry-pick in a real project? What can go wrong with cherry-picking?
+
+Cherry-pick copies a specific commit from one branch and applies it onto another branch.
+Instead of merging the whole branch, you pick just one (or a few) commits.
+
+Use Cherry picking when : 
+* Hotfix from another branch : You fixed a bug in develop, but need it in main immediately
+* Selecting only useful commits
+* Bringing back a lost or old commit
+* Applying same fix across multiple branches
+
+What can go wrong with cherry-picking :
+* Merge conflicts
+* Broken context : A commit might depend on previous commits
+* Messy history in teams
+* Duplicate commits : Same change but Different commit IDs
+
