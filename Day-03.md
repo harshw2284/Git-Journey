@@ -117,7 +117,7 @@ git cherry-pick a1b2c3d
 
 ---
 
-## 💡 Key Learnings
+<!-- ## 💡 Key Learnings
 **1. To show changes you made but haven’t added (git add) yet**
 ```bash
 git diff
@@ -141,7 +141,7 @@ git remote set-url origin https://github.com/newuser/repo.git
 git remote add <name> <url>
 git remote add origin https://github.com/user/repo.git
 ```
-
+-->
 ---
 
 # QnA
