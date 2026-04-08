@@ -69,6 +69,9 @@ gh issue view 1 --repo owner/repo
 gh issue close 1 --repo owner/repo --comment "Done"
 ```
 
+---
+
+
 ### ✅ Task 4: Pull Requests
 **1. create a pull request**
 
