@@ -67,7 +67,29 @@ gh issue close 1 --repo owner/repo --comment "Done"
 ```
 
 ### ✅ Task 4: Pull Requests
+**1. create a pull request**
 
+```bash
+gh pr create --title "Test PR" --body "Testing PR"
+```
+
+**2. List PRs**
+
+```bash
+gh pr list
+```
+
+**3. View the details of your PR**
+
+```bash
+gh pr view 1
+```
+
+**4. Merge PR**
+
+```bash
+gh pr merge 1 --merge
+```
 
 
 ---
@@ -76,22 +98,22 @@ gh issue close 1 --repo owner/repo --comment "Done"
 
 `gh api` — make raw GitHub API calls from the terminal
 
-gh gist — create and manage GitHub Gists
+`gh gist` — create and manage GitHub Gists
 
-gh release — create and manage releases
+`gh release` — create and manage releases
 
-gh alias — create shortcuts for commands you use often
+`gh alias` — create shortcuts for commands you use often
 
-gh search repos — search GitHub repos from the terminal
+`gh search repos` — search GitHub repos from the terminal
 
 ---
 
 # QnA
-## 1.What authentication methods does gh support?
+## 1. What authentication methods does gh support?
  
- 
+## 2. How could you use gh issue in a script or automation?
    
-## 2. What merge methods does gh pr merge support? How would you review someone else's PR using gh?
+## 3. What merge methods does gh pr merge support? How would you review someone else's PR using gh?
    
 
 
