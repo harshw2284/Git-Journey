@@ -40,6 +40,9 @@ gh auth status
 gh repo clone owner/repo-name
 ```
 
+---
+
+
 ### ✅ Task 3: Issues
 
 **1. Create an issue on one of your repos from the terminal — give it a title, body, and a label**
